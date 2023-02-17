@@ -1,4 +1,4 @@
-about this code:
+About this code:
 
 Head Pose Estimation and Detection,
 Homography,
