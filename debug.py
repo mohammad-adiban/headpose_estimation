@@ -13,12 +13,9 @@ from stabilizer import Stabilizer
 import curses  # Get the module
 stdscr = curses.initscr()  # initialise it
 stdscr.clear()  # Clear the screen
-###
+
 
 print("OpenCV version: {}".format(cv2.__version__))
-
-
-# In[6]:
 
 
 # multiprocessing may not work on Windows and macOS, check OS for safety.
@@ -34,15 +31,9 @@ def get_face(detector, img_queue, box_queue):
         box_queue.put(box)
 
 
-# In[10]:
-
-
 video_src = "data/video.mp4"
 cap = cv2.VideoCapture(video_src)
 _, sample_frame = cap.read()
-
-
-# In[11]:
 
 
 # Introduce mark_detector to detect landmarks
